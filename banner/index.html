@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>王俊web开发个人展示站</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="css/carousel.css">
+</head>
+<body>
+<div id='banner' style="height: 100px;width:900px;margin-bottom: 20px">
+</div>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script src='js/carousel.js'></script>
+<script type="text/javascript">
+window.onload = function(){
+	var banner = new Carousel();
+	//图片地址数组。不要少于三张
+	var imgSrcDate = ["images/a1.png","images/a2.png","images/a3.png","images/a4.png","images/a5.png","images/a6.png"];
+	var imgUrl = ["http://www.juneday.site/wordpress","http://www.juneday.site/wordpress","http://www.juneday.site/wordpress","http://www.juneday.site/wordpress","http://www.juneday.site/wordpress","http://www.juneday.site/wordpress"];
+	banner.init({
+		container:"#banner",
+		datas:imgSrcDate,
+		urls:imgUrl,
+		autoplaySpeed:5000,
+		autoplay:false
+	});
+}
+</script>
+</body>
+</html>
